@@ -1,0 +1,58 @@
+<form class="btn" style="float: right" action="/logout" method="get">
+    <button type="submit">
+        Logout
+    </button>
+  </form>
+<h2>Product</h2>
+<center>
+<form action="/products/edit" enctype="multipart/form-data" method="post" id="test">
+<div class="form-group">
+    <input type="hidden" class="form-control" name="_id" value="<%=data._id%>">
+</div>
+<div class="form-group">
+    <label>Product name:</label>
+    <input type="text" class="form-control" name="productname" value="<%=data.productname%>">
+</div>
+<div class="form-group">
+    <label>Category:</label>
+    <!--<input type="text" class="form-control" name="category" value="<%=data.category%>">-->
+    <select id="category" name="category">
+        <option value="Laptops">Laptops</option>
+        <option value="Desktops">Desktops</option>
+        <option value="LCDs">LCDs</option>
+        <option value="Other Peripherals">Other Peripherals</option>
+      </select>
+</div>
+<div class="form-group">
+    <label>Type:</label>
+    <!--<input type="text" class="form-control" name="category" value="<%=data.type%>">-->
+    <select id="type" name="type">
+        <option value="New">New</option>
+        <option value="Old">Old</option>
+      </select>
+</div>
+<div class="form-group">
+    <label>Price:</label>
+    <input type="text" class="form-control" name="price" value="<%=data.price%>">
+</div>
+<div class="form-group">
+    <label>Description:</label>
+    <!--<input type="text" class="form-control" name="description" value="<%=data.description%>">-->
+    <textarea form ="test" rows="4" cols="50" name="description" placeholder="Product description..."><%=data.description%></textarea> 
+</div>
+<div class="field_wrapper">
+    <div>
+        <%for(var i=0;i< data.image.length;i+=1){%>
+        <input type="file" name="image" value="/product_images/<%=data.image[i]%>">
+        <%}%>
+        <a href="javascript:void(0);" class="add_button" title="Add field">Add field</a>
+    </div>
+</div>
+<button type="submit" class="btn btn-warning btn-lg">Submit</button>
+</form>
+<div class="error">
+   <h3><i><%=messages.info%></i></h3>
+</div>
+    </center>
+
+    

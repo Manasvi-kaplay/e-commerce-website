@@ -1,0 +1,41 @@
+<html>
+<title>user view</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:inline-block;}
+div.gallery {
+  margin: 15px;
+  /*border: 1px solid #ccc;*/
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid black;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  /*padding: 15px;*/
+  text-align: center;
+}
+</style>
+<body>
+  <center><h2><i><%=title;%></i></h2></center>
+    <% data.forEach(function(x){ %>
+                <%for (var i = 0; i < x.image.length; i++){%>
+                  <div class="gallery">
+        <img src="/product_images/<%= x.image[i]%>" alt="Chicago" height="800" width="800">
+        <div class="desc"><%=x.productname%></div>
+        <div class="desc"><a href="/learn_more/<%=x._id%>">Learn more..</a></div>
+        <div class="form-group">
+          <input type="hidden" class="form-control" name="_id" value="<%=x._id%>">
+      </div>
+      </div>
+      <%break%>
+              <%}%>
+            <% }) %>
+      </body>
+      </html>

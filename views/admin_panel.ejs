@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Admin Panel</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #container ul{
+        list-style: none;
+        font-size:40px;
+    }
+    #container ul li{
+        font-size: 16px;
+        width:130px;
+        border:2px black;
+        height:50px;
+        line-height: 50px;
+        text-align: center;
+        float:right;
+        color:black;
+        position:relative;
+    }
+    #container ul li a{
+        padding:5px 0;
+        display: block;
+        text-decoration: none;
+        color:black;
+        font-size:18px;
+    }
+    #container ul li a:hover{
+        background-color: white;
+    }
+    #container ul ul {
+        margin:0px;
+        padding:0px;
+        display:none;
+    }
+    #container ul ul a{
+        margin:0;
+        padding:0;
+        font-size: 16px;
+    }
+    #container ul li:hover>ul{
+        display:block;
+    }
+    #container ul ul ul {
+        margin-left: 100px;
+        top:0px;
+        position: absolute;
+    }
+    #container ul ul ul a{
+        margin:0px;
+        padding:0px;
+        font-size:12px;
+    }
+    #container-item{
+        display:inline-block;
+        height:50px;
+        line-height: 50px;
+        color:black;
+        text-decoration: none;
+    }
+    #container-item:hover{
+        background-color: pink;
+    }
+    #container-item:focus{
+        background-color: white;
+    }
+</style>
+</head>
+<body id="home">
+<!-- START PAGE SOURCE -->
+<form class="btn" style="float: right" action="/logout" method="get">
+    <button type="submit">
+        Logout
+    </button>
+  </form>
+<h2><font color="#660000" face="times new roman"><i><b>Admin Panel..</b></i></font></h2><br><br>
+    <div id="container">
+    <ul class="menu">
+      <li>
+          <i><b><a href="#">Our Services</a></b></i> 
+      </li>
+        <li>
+            <i><b><a href="#">Training</a></b></i>
+        </li>
+      <li>
+          <i><b><a href="#">Products</a></b></i>
+      <ul>
+          <li><a href="/products/addproduct">Add product</a></li>
+          <li><a href="/view_products/view_all">View all products</a></li>
+      </ul>
+      </li>
+      <li>
+        <i><b><a href="#">About us</a></b></i> 
+    </li>
+    <li>
+      <i><b><a href="/contact_us/view">Contact us</a></b></i> 
+  </li>
+    </ul>
+    </div>
+</body>
+</html>

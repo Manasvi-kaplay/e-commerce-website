@@ -1,0 +1,19 @@
+<form class="btn" style="float: right" action="/logout" method="get">
+    <button type="submit">
+        Logout
+    </button>
+  </form>
+<h2><i>Contact us</i></h2>
+<br><br>
+<center>
+    <table class="t">
+        <% data.forEach(function(x){ %>
+            <div>
+            <tr>
+                <td><%=x.contact %></td>
+                <td><a href="/contact_us/edit/<%= x._id %>">Edit</a></td>
+            </tr>
+            </div>
+            <% }) %>
+    </table>
+</center>

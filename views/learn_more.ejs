@@ -1,0 +1,25 @@
+<center>
+    <h2>
+        <%=data.productname%>
+    </h2>
+              <div class="container"> 
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div>
+                        <%for (var i = 0; i < data.image.length; i++){%>
+                            <a target="_blank" href="/product_images/<%= data.image[i]%>">
+                            <img src="/product_images/<%= data.image[i]%>" alt="Chicago" height="150" width="150" style="border:2px solid black">
+                            </a>
+                        <%}%>
+                    </div>
+                </div>
+              </div>
+        </div>  
+        <h3>
+        <i>Category: <%=data.category %><br>
+        Type: <%=data.type %><br>
+        Price: <%=data.price %><br>
+        Description: <%=data.description%><br>
+        </i>
+        </h3>
+    </center>

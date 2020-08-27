@@ -1,0 +1,54 @@
+<form class="btn" style="float: right" action="/logout" method="get">
+    <button type="submit">
+        Logout
+    </button>
+  </form>
+<h2><i>Add new product</i></h2>
+<br><br>
+<center>
+<form action="/products/addproduct" enctype="multipart/form-data" method="post" id="test">
+<div class="form-group">
+    <label>Product name:</label>
+    <input type="text" class="form-control" name="productname">
+</div>
+<div class="form-group">
+    <label>Category:</label>
+    <!---<input type="text" class="form-control" name="category">-->
+    <select id="category" name="category">
+        <option value="Laptops">Laptops</option>
+        <option value="Desktops">Desktops</option>
+        <option value="LCDs">LCDs</option>
+        <option value="Other Peripherals">Other Peripherals</option>
+      </select>
+</div>
+<div class="form-group">
+    <label>Type:</label>
+    <!---<input type="text" class="form-control" name="category">-->
+    <select id="type" name="type">
+        <option value="New">New</option>
+        <option value="Old">Old</option>
+      </select>
+</div>
+<div class="form-group">
+    <label>Price:</label>
+    <input type="text" class="form-control" name="price">
+</div>
+<div class="form-group">
+    <label>Description:</label>
+     <textarea form ="test" rows="4" cols="50" name="description" placeholder="Product description..."></textarea> 
+</div>
+<div class="field_wrapper">
+    <div>
+        <input type="file" name="image">
+        <a href="javascript:void(0);" class="add_button" title="Add field">Add field</a>
+    </div>
+</div>
+<button type="submit" class="btn btn-warning btn-lg">Submit</button>
+</form>
+<div class="error">
+    <h3><i><%=messages.info%></i></h3>
+</div>
+</center>
+    
+
+    

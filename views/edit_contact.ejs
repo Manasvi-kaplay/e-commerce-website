@@ -1,0 +1,20 @@
+<form class="btn" style="float: right" action="/logout" method="get">
+    <button type="submit">
+        Logout
+    </button>
+  </form>
+<h2>Contact us</h2>
+<center>
+    <form action="/contact_us/edit" method="post" id="test">
+        <div class="form-group">
+            <!--<input type="text" class="form-control" name="description" value="<%=data.description%>">-->
+            <input type="hidden" name="id" value="<%=data._id%>" >
+        </div>
+        <div class="form-group">
+            <label>Description:</label>
+            <!--<input type="text" class="form-control" name="description" value="<%=data.description%>">-->
+            <textarea form ="test" rows="4" cols="50" name="contact" placeholder="Contact info..."><%=data.contact%></textarea> 
+        </div>
+        <button type="submit">Edit</button>
+    </form>
+</center>

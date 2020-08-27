@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Creative computers</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<script src="/sifr/sifr.js" type="text/javascript"></script>
+<script src="/sifr/sifr-debug.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.js"></script>
+<script type="text/javascript" src="/js/slider.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    #container ul{
+        list-style: none;
+        font-size:40px;
+    }
+    #container ul li{
+        font-size: 18px;
+        width:130px;
+        border:2px black;
+        height:50px;
+        line-height: 50px;
+        text-align: center;
+        float: right;
+        color:black;
+        position:relative;
+    }
+    #container ul li a{
+        padding:5px 0;
+        display: block;
+        text-decoration: none;
+        color:black;
+        font-size:20px;
+    }
+    #container ul li a:hover{
+        background-color: white;
+    }
+    #container ul ul {
+        margin:0px;
+        padding:0px;
+        display:none;
+    }
+    #container ul ul a{
+        margin:0;
+        padding:0;
+        font-size: 16px;
+    }
+    #container ul li:hover>ul{
+        display:block;
+    }
+    #container ul ul ul {
+        margin-left: 100px;
+        top:0px;
+        position: absolute;
+    }
+    #container ul ul ul a{
+        margin:0px;
+        padding:0px;
+        font-size:16px;
+    }
+    #container-item{
+        display:inline-block;
+        height:50px;
+        line-height: 50px;
+        color:black;
+        text-decoration: none;
+    }
+    #container-item:hover{
+        background-color: pink;
+    }
+    #container-item:focus{
+        background-color: white;
+    }
+   
+</style>
+</head>
+<body id="home">
+<!-- START PAGE SOURCE -->
+<center><h1><font color="black" face="times new roman"><i><b>Creative computers</b></i></font></h1></center><br>
+    <div id="container">
+    <ul class="menu">
+      <li>
+          <i><b><a href="#">Our Services</a></b></i> 
+      </li>
+        <li>
+            <i><b><a href="#">Training</a></b></i>
+        </li>
+        <form action="" method="POST">
+      <li>
+          <i><b><a href="#">Products</a></b></i>
+      <ul>
+          <li><b><a href="#">Laptops</a></b><ul>
+                <li><b><a href="/filters/newlaptops">New</a></b></li>
+                <li><b><a href="/filters/oldlaptops">Old</a></b></li>
+       </ul>
+          </li>  
+      </ul>
+      <ul>
+        <li><b><a href="#">Desktops</a></b><ul>
+              <li><b><a href="/filters/newdesktops">New</a></b></li>
+              <li><b><a href="/filters/olddesktops">Old</a></b></li>
+     </ul>
+        </li>  
+    </ul>
+    <ul>
+        <li><b><a href="#">LCDs</a></b><ul>
+              <li><b><a href="/filters/newlcds">New</a></b></li>
+              <li><b><a href="/filters/oldlcds">Old</a></b></li>
+     </ul>
+        </li>  
+    </ul>
+    <ul>
+        <li><b><a href="#">Other peripherals</a></b><ul>
+              <li><b><a href="/filters/newperi">New</a></b></li>
+              <li><b><a href="/filters/oldperi">Old</a></b></li>
+     </ul>
+        </li>  
+    </ul>
+      </li>
+        </form>
+      <li>
+        <i><b><a href="#">About us</a></b></i> 
+    </li>
+    <li>
+      <i><b><a href="/contact_us/view">Contact us</a></b></i> 
+  </li>
+    </ul>
+    </div>
+    <br><br><br>
+<div class="container"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <a href="#"><h3>Laptops</h3></a>
+        <img src="/images/best_laptops_1000.jpg" style="height:50%;">
+      </div>
+      <div class="item">
+        <a href="#"><h3>Desktops</h3></a>
+        <img src="/images/71F5jycO8kL._SL1500_.jpg" alt="Chicago" style="height:50%;" width="600px">
+      </div>
+      <div class="item">
+        <a href="#"><h3>LCDs</h3></a>
+        <img src="/images/71Zy3sRPqHL._SL1287_.jpg" alt="New york" style="height:50%;" width="600px">
+      </div>
+      <div class="item">
+        <a href="#"><h3>Other products</h3></a>
+        <img src="/images/comp.jpg" alt="New york" style="height:50%;">
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<script type="text/javascript">
+if (typeof sIFR == "function") {
+    sIFR.replaceElement(named({ sSelector: "body h1", sFlashSrc: "sifr/h1.swf", sColor: "#000000", sLinkColor: "#000000", sBgColor: "#FFFFFF", sHoverColor: "#000000", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body .box-holder h2.white", sFlashSrc: "sifr/h2.swf", sColor: "#ffffff", sLinkColor: "#ffffff", sBgColor: "#FFFFFF", sHoverColor: "#6F6F6F", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body h2", sFlashSrc: "sifr/h2.swf", sColor: "#000000", sLinkColor: "#C90000", sBgColor: "#FFFFFF", sHoverColor: "#6F6F6F", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body .title-border-dashed h3", sFlashSrc: "sifr/h3-sidebox.swf", sColor: "#000000", sLinkColor: "#000000", sBgColor: "#FFFFFF", sHoverColor: "#32A700", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body h3", sFlashSrc: "sifr/h3.swf", sColor: "#000000", sLinkColor: "#0D112F", sBgColor: "#FFFFFF", sHoverColor: "#0D112F", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body h4", sFlashSrc: "sifr/h4.swf", sColor: "#000000", sLinkColor: "#000000", sBgColor: "#FFFFFF", sHoverColor: "#000000", sWmode: "transparent" }));
+    sIFR.replaceElement(named({ sSelector: "body h4.subhead", sFlashSrc: "sifr/h4-subhead.swf", sColor: "#0D112F", sLinkColor: "#0D112F", sBgColor: "#FFFFFF", sHoverColor: "#0D112F", sWmode: "transparent" }));
+};
+</script>
+</body>
+</html>
